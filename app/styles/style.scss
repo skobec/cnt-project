@@ -3505,8 +3505,12 @@ header {
 }
 
 .hyp-inner {
-  width: 90%;
+  width: 100%;
+  right: 0;
   max-width: 1825px;
+  margin-right: 0;
+  padding: 85px 0 0 50px;
+  background-color: #080a08;
 }
 
 .hyp-left {
@@ -3649,7 +3653,7 @@ header {
 
 .hgit-left {
   float: left;
-  width: 43.5714286%;
+  width: 45.571429%;
   padding: 95px 6.25% 78px;
   background-color: #fff;
   position: relative;
@@ -3658,12 +3662,19 @@ header {
   box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.13);
   pointer-events: auto;
 }
-
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
 .hgit-left-desc {
-  margin-bottom: 105px;
+  margin-bottom: 0px;
   p {
     font-size: 13px;
     line-height: 2;
+    margin-bottom: 15px;
   }
   a {
     font-weight: 700;
@@ -4159,9 +4170,9 @@ header {
 
 .lets-create-your-story {
   padding: 80px 20px;
-  margin-bottom: 230px;
+  margin-bottom: 65px;
   text-align: center;
-  background: url(../img/home-loyalty-bg.jpg) center center;
+  background-color: #000000;
   .section-title {
     color: #fff;
     margin-bottom: 18px;
