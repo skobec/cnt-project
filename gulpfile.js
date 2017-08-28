@@ -95,6 +95,13 @@ gulp.task('json', function() {
         .pipe(connect.reload());
 });
 
+
+gulp.task('copy-git', function() {
+    return gulp
+        .src('dist/**/*')
+        .pipe(gulp.dest('.././skobec.github.io/portfol/cwt/'));
+});
+
 // Задача "watch". Запускается командой "gulp watch"
 // Она следит за изменениями файлов и автоматически запускает другие задачи
 gulp.task('watch', function () {

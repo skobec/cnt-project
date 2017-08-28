@@ -762,6 +762,43 @@ h1, h2, h3, h4, h5, h6, ol, p, ul {
   margin: 0 auto;
 }
 
+
+
+//preloader svg start
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #0f99d9;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+}
+//preloader svg end
+
 .preloader {
   position: fixed;
   left: 0;
@@ -3399,7 +3436,7 @@ header {
     text-align: center;
     li {
       display: inline-block;
-      padding: 8px;
+      padding: 4px;
       cursor: pointer;
       &:hover button:before {
         background-color: #282828;
@@ -3407,7 +3444,7 @@ header {
     }
     button {
       display: block;
-      width: 2px;
+      width: 16px;
       height: 16px;
       font-size: 0;
       line-height: 0;
@@ -3424,16 +3461,17 @@ header {
         right: 0;
         bottom: 0;
         margin: auto;
-        width: 2px;
-        height: 16px;
+        width: 10px;
+        height: 10px;
         background-color: #dfdfdf;
         -webkit-transition: all .3s ease;
         transition: all .3s ease;
       }
     }
     .slick-active button:before {
-      height: 38px;
-      background-color: #282828;
+      height: 16px;
+      width: 16px;
+      background-color: #999999;
     }
   }
 }
@@ -5843,6 +5881,31 @@ footer {
   }
 }
 
+.list-user {
+  ul {
+    padding-left: 0;
+    list-style: none;
+    li {
+      font-size: 16px;
+      margin-bottom: 0;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -15px;
+        top: 9px;
+        width: 7px;
+        height: 2px;
+        background-color: #b1b1b6;
+      }
+    }
+  }
+}
+.subtitle-aos {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
 .uc-table-wrapper {
   margin-bottom: 20px;
   &.simplebar .simplebar-scroll-content {
@@ -6632,10 +6695,11 @@ footer {
 }
 
 .your-new-smile-header {
-  background: url(../img/case-detail-bg.jpg) center center;
+  background: url(../img/background_head_page.jpg) center center;
   height: 1px;
   padding-bottom: 39.1%;
-  margin-bottom: 54px;
+  //margin-bottom: 54px;
+  margin-bottom: 290px;
   position: relative;
 }
 
