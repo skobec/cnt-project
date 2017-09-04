@@ -3029,10 +3029,10 @@ header {
 }
 
 .btn {
-  padding: 16px 60px;
+  padding: 16px 20px;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -5765,7 +5765,7 @@ footer {
 }
 
 .case-detail-header {
-  background: url(../img/case-detail-bg.jpg) center center;
+  background: url('../img/background_doctor.jpg') center center;
   height: 1px;
   padding-bottom: 39.7%;
   margin-bottom: 54px;
@@ -5795,6 +5795,9 @@ footer {
   padding-left: 90px;
   padding-right: 60px;
   padding-bottom: 100px;
+  .event-info-type {
+    margin-top: 35px;
+  }
   .hhc-scroll-down {
     right: 20px;
   }
@@ -5802,7 +5805,7 @@ footer {
 
 .cdh-title {
   line-height: 1;
-  font-size: 110px;
+  font-size: 62px;
   font-family: "Playfair Display", serif;
   color: #fff;
   word-wrap: break-word;
@@ -5920,16 +5923,18 @@ footer {
     padding-left: 0;
     list-style: none;
     li {
-      font-size: 16px;
+      font-size: 14px;
       margin-bottom: 0;
+      color: #bcbcc1;
+      line-height: 24px;
       &:before {
         content: "";
         position: absolute;
-        left: -15px;
-        top: 9px;
-        width: 7px;
-        height: 2px;
-        background-color: #b1b1b6;
+        left: -25px;
+        top: 4px;
+        width: 9px;
+        height: 9px;
+        background-color: #cccccc;
       }
     }
   }
@@ -7111,6 +7116,9 @@ footer {
       transform: none;
     }
   }
+  &.event-container-mini {
+    padding-bottom: 29%;
+  }
 }
 
 .event-container-col4 {
@@ -7157,7 +7165,7 @@ footer {
 .event-info-type {
   float: left;
   margin-right: 35px;
-  letter-spacing: 3px;
+  letter-spacing: 0.5px;
 }
 
 .event-info-date {
