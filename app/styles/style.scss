@@ -3771,7 +3771,7 @@ header {
   position: relative;
   margin-top: -100px;
   margin-bottom: 155px;
-  height: 541px;
+  min-height: 541px;
   .container {
     position: relative;
     pointer-events: none;
@@ -4207,6 +4207,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .home-numbers {
   margin-bottom: 100px;
+  float: left;
+  width: 100%;
   .container {
     max-width: 1047px;
   }
@@ -4917,7 +4919,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-left: -30px;
 }
 
-.case-container {
+.case-container, .event-container.case-container {
   border-left: 30px solid transparent;
   float: left;
   width: 25%;
@@ -5194,8 +5196,8 @@ input[type=number]::-webkit-outer-spin-button {
   .cases-listing, .cases-listing-row {
     margin-bottom: 0;
   }
-  .case-container {
-    width: 50%;
+  .case-container, .event-container.case-container {
+    width: 50%!important;
     margin-bottom: 60px;
     padding-bottom: 66.8%;
   }
@@ -7214,7 +7216,7 @@ footer {
   color: #c6c6ca;
 }
 
-.event-container {
+.event-container, .case-container {
   border-left: 30px solid transparent;
   float: left;
   width: 50%;
@@ -7397,8 +7399,8 @@ footer {
   .events-listing-row {
     margin-bottom: 0;
   }
-  .event-container {
-    width: 100%;
+  .event-container, .event-container.case-container {
+    width: 100%!important;
     padding-bottom: 500px;
     margin-bottom: 40px;
   }
