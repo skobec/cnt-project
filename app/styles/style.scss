@@ -4710,7 +4710,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 700px) {
   .hhc-tagline-primary {
-    font-size: 70px;
+    font-size: 56px;
     margin-bottom: 35px;
   }
   .hhc-scroll-down {
@@ -4770,7 +4770,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 480px) {
   .hhc-tagline-primary {
-    font-size: 62px;
+    font-size: 35px;
   }
   .hhc-cta-second {
     margin-top: 20px;
@@ -5189,6 +5189,22 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media screen and (max-width: 1024px) {
+  .contact-main-form {
+    .col-applicat {
+      width: 100%;
+    }
+  }
+  .form-body-applicat {
+    .col-applicat {
+      padding-right: 0;
+    }
+  }
+  .evnt-info-speaker {
+    display: none;
+  }
+  .event-info {
+    bottom: 15px!important;
+  }
   .cases-intro {
     margin-top: 100px;
     margin-bottom: 40px;

@@ -10,7 +10,7 @@ var gulp = require('gulp'), // Сообственно Gulp JS
     imagemin = require('gulp-imagemin'), // Минификация изображений
     csso = require('gulp-csso'), // Минификация CSS
     sass = require('gulp-sass'); // Конверстация SASS (SCSS) в CSS
-connect = require('gulp-connect');// локальный веб сервер //
+    connect = require('gulp-connect');// локальный веб сервер //
 
 
 /*
